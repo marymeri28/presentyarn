@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+<body>
+
+<heading>
+  <h1 style="font-size: 3rem"><strong>My Task Manager</strong></h1>
+</heading>
+
+<div class="taskbox-layout">
+  <div class="taskbox-bg"></div>
+  <div class="taskbox-body">
+
+    <form class="form" id="task-form">
+      <h2 style="font-size: 2rem"><strong>Any task today?</strong></h2>
+
+      <div class="input-task">
+       <label for="task"></label>
+        <input type="text" id="task" name="task-input" placeholder="Enter a task">
+        <p id="error" class="error"></p>
+      </div>
+
+      <button type="button" class="form-submit" id="new-task">Add Task</button>
+
+      <p class="taskcounter">Total Task: <span id="count">0</span></p>
+    </form>
+
+    <div class=" list-layout">
+      <h2>My tasks</h2>
+      <ul class="container" id="task-list"></ul>
+    </div>
+
+
+    <script src="script.js"></script>
+       </div>
+  </div>
+
+
+</body>
+</html>
