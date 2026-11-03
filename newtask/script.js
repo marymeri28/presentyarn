@@ -16,9 +16,9 @@ function formatDate(dateValue) {
   const tomorrow = new Date(Date.now() + 86400000).toLocaleDateString("en-CA");
   if (dateValue === today) return "Today";
   if (dateValue === tomorrow) return "Tomorrow";
-  return new Date(dateValue + "T00:00").toLocaleDateString("en-CA", {
-    weekday: "long",
-    year: "2-digit",
+  return new Date(dateValue + "T00:00").toLocaleDateString("en-US", {
+    weekday: "short",
+    year: "numeric",
     month: "2-digit",
     day: "2-digit",
   });
@@ -65,14 +65,7 @@ function addTask() {
   if (text === "") {
     error.textContent = "Please enter a task";
     return;
-
-    const btnWrap = document.createElement("div");
-    btnWrap.className = "task-buttons";
-    btnWrap.append(completeBtn, deleteBtn);
-
-    li.append(span, btnWrap);
   }
-  error.textContent = "";
 
   const li = document.createElement("li");
   li.className = "task-item";
