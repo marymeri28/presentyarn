@@ -120,9 +120,9 @@ const heading = document.getElementById("welcome-heading");
 const hour= new Date().getHours();
 
 if (hour < 12) {
-  heading.textContent = "Good Morning! What are we doing today?";
+  heading.textContent = "🌅 Good Morning! What are we doing today?";
 } else if (hour <18) {
-  heading.textContent = "Good Afternoon! Stay focused";
+  heading.textContent = "☀️Good Afternoon! Stay focused";
 }else {
-  heading.textContent ="Good Evening! Wrapping up?";
+  heading.textContent ="🌙 Good Evening! Wrapping up?";
 }
