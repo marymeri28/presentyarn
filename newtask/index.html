@@ -7,7 +7,7 @@
 <body>
 
 <heading>
-  <h1 style="font-size: 3rem"><strong>My Task Manager</strong></h1>
+  <h1 id="welcome-heading"><strong>My Task Manager</strong></h1>
 </heading>
 
 <div class="taskbox-layout">
@@ -15,11 +15,12 @@
   <div class="taskbox-body">
 
     <form class="form" id="task-form">
-      <h2 style="font-size: 2rem"><strong>Any task today?</strong></h2>
+      <h2><strong>Any task today?</strong></h2>
 
       <div class="input-task">
        <label for="task"></label>
         <input type="text" id="task" name="task-input" placeholder="Enter a task">
+        <input type="date" id="date-task" name="date-input">
         <p id="error" class="error"></p>
       </div>
 
@@ -27,6 +28,7 @@
 
       <p class="taskcounter">Total Task: <span id="count">0</span></p>
     </form>
+
 
     <div class=" list-layout">
       <h2>My tasks</h2>
