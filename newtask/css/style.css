@@ -5,10 +5,8 @@
   h1 {
     background-color: rosybrown;
     color: black;
-    padding: 0;
     margin: 0;
     height: 200px;
-    width:100%;
     display:grid;
     place-items: center;
     font-size:2rem;
@@ -16,7 +14,6 @@
 
  body {
    margin: 0;
-   padding: 0;
    background-color: antiquewhite;
  }
 
@@ -24,7 +21,6 @@
    display:flex;
    justify-content: center;
    align-items: flex-start;
-   width:100%;
    min-height: 100vh;
    padding:50px;
  }
@@ -35,7 +31,6 @@
    border-radius:16px;
    width:100%;
    max-width:600px;
-   min-width: 0 ;
    display: grid;
    grid-template-columns: minmax(0, 1fr);
    border:1px solid black;
@@ -45,24 +40,19 @@
  .form {
    display:flex;
    flex-direction: column;
-   align-items: stretch;
-   min-width: 0;
  }
 
- .form h2 {
-   display:flex;
-   text-align: center;
-   font-family: "DejaVu Serif", serif;
-   font-size: 2rem;
-   justify-content: center;
- }
+.form h2 {
+  text-align: center;
+  font-family: "DejaVu Serif", serif;
+  font-size: 2rem;
+}
 
 .input-task {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
-  min-width: 0;
 }
 
 input[type="text"],
@@ -90,8 +80,6 @@ input:focus{
   font-size:1rem;
   cursor:pointer;
   transition: background-color 0.2s ease;
-  text-align: center;
-  height: auto;
   align-self: center;
 
 }
@@ -105,7 +93,6 @@ input:focus{
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     width: 100%;
-    min-width: 0;
     max-width: 600px;
   }
 
@@ -162,13 +149,11 @@ input:focus{
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  flex: 0 0 auto;
 }
-
-.task-buttons button {
-  width: 100%;
+@media (max-width: 768px) {
+  .taskbox-layout { padding: 16px 12px; }
+  .taskbox-body { padding: 18px; }
 }
-
 
 @media (max-width: 400px) {
   h1 {
