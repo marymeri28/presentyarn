@@ -5,6 +5,7 @@ const taskList = document.getElementById("task-list");
 const error = document.getElementById("error");
 const taskCounter = document.getElementById("count");
 
+//start na ari//
 function updateCount() {
   taskCounter.textContent = taskList.querySelectorAll(".task-item").length;
 }
